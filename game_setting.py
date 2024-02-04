@@ -346,3 +346,11 @@ class SpriteActor(Actor):
             game.screen.blit(self._surf, self.topleft)
         else:
             game.screen.blit(self._surf, self.topleft)
+
+
+def mouse_cursor_button_on():
+    pygame.mouse.set_cursor(pygame.cursors.diamond)
+
+
+def mouse_cursor_button_off():
+    pygame.mouse.set_cursor(pygame.cursors.arrow)
